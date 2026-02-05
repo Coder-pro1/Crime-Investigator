@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-   name="Medical_chatbot",
+   name="Crime_investigator",
    version="1.0",
    author="Sithija",
    author_email="sithijaseneviratne@gmail.com",
