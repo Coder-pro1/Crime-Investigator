@@ -1,0 +1,9 @@
+README.md
+setup.py
+Crime_investigator.egg-info/PKG-INFO
+Crime_investigator.egg-info/SOURCES.txt
+Crime_investigator.egg-info/dependency_links.txt
+Crime_investigator.egg-info/top_level.txt
+src/__init__.py
+src/helper.py
+src/prompt.py

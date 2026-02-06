@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="bloodGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0000;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="45" fill="url(#bloodGradient)" stroke="#000" stroke-width="2"/>
+  <text x="50" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="#fff" text-anchor="middle">🔍</text>
+</svg>

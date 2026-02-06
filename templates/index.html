@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Investigator AI</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="alternate icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Detective background image with overlay -->
+    <div class="detective-bg"></div>
+    
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🔍 CRIME INVESTIGATOR AI 🔍</h1>
+                <p class="tagline">Your Expert Forensic Analysis & Investigation Assistant</p>
+                <div class="confidential-stamp">
+                    <span>CLASSIFIED</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Interface -->
+        <div class="chat-interface-wrapper">
+            <!-- Main Chat Container -->
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="confidential-border">
+                        <div class="case-title-section">
+                            <span class="confidential-text">⚠ CONFIDENTIAL CASE FILE ⚠</span>
+                            <input type="text" id="caseTitle" class="case-title-input" value="New Investigation" readonly>
+                            <button id="renameCaseBtn" class="rename-btn" title="Rename Case">✏️</button>
+                        </div>
+                        <div class="case-actions">
+                            <button id="newTopicBtn" class="action-btn" title="Start New Investigation">➕ New Case</button>
+                            <span class="case-number">CASE #2026-001</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="chat-box" id="chatBox">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <div class="bot-header">
+                                <img src="/static/images/ai_as.jpg" alt="AI" class="bot-avatar">
+                                <strong>Investigator AI</strong>
+                            </div>
+                            <p>Welcome to the Crime Investigator AI system. I'm here to assist you with forensic procedures, investigation protocols, and crime scene analysis. How may I assist you today?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        placeholder="Enter your investigation query..."
+                        autocomplete="off"
+                    >
+                    <button id="sendBtn">
+                        <span>SUBMIT</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 10L18 10M18 10L11 3M18 10L11 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Chat History Sidebar -->
+            <div class="chat-history-sidebar" id="chatHistorySidebar">
+                <div class="sidebar-header">
+                    <h3>📋 Case History</h3>
+                    <button id="clearHistoryBtn" class="clear-btn" title="Clear All History">🗑️</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <p class="no-history">No case history yet</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>⚠ For Official Investigation Use Only | All Conversations Are Logged</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
